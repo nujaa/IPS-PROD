@@ -1,0 +1,180 @@
+\hypertarget{classPoly}{}\section{Poly Class Reference}
+\label{classPoly}\index{Poly@{Poly}}
+
+
+a Polynome is defined by its value in abscissa and its orderly.  
+
+
+
+
+{\ttfamily \#include $<$poly.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Poly} (uint n\+Hermite, uint n\+Laguerre, uint m\+Laguerre, arma\+::vec Z)\hypertarget{classPoly_ac4c70cdc8021ed99c90d247ba5911392}{}\label{classPoly_ac4c70cdc8021ed99c90d247ba5911392}
+
+\item 
+uint {\bfseries get\+NH} ()\hypertarget{classPoly_a09b39ad29e8f86d3865182c07d8b9f62}{}\label{classPoly_a09b39ad29e8f86d3865182c07d8b9f62}
+
+\item 
+uint {\bfseries get\+NL} ()\hypertarget{classPoly_a9beab6e81373a7a65382517313ebddc4}{}\label{classPoly_a9beab6e81373a7a65382517313ebddc4}
+
+\item 
+uint {\bfseries get\+ML} ()\hypertarget{classPoly_ad0b37c94561ae0511f475871d384e916}{}\label{classPoly_ad0b37c94561ae0511f475871d384e916}
+
+\item 
+arma\+::mat {\bfseries get\+Hermite\+Values} ()\hypertarget{classPoly_ac5a6b078cd8b41e9465c7992bb399580}{}\label{classPoly_ac5a6b078cd8b41e9465c7992bb399580}
+
+\item 
+arma\+::cube {\bfseries get\+Laguerre\+Values} ()\hypertarget{classPoly_a84cb41ff5c1a40e544419fcc38ab0b01}{}\label{classPoly_a84cb41ff5c1a40e544419fcc38ab0b01}
+
+\item 
+arma\+::vec {\bfseries get\+Z\+Values} ()\hypertarget{classPoly_a51084101c1beb857fe23e5e9f67e52da}{}\label{classPoly_a51084101c1beb857fe23e5e9f67e52da}
+
+\item 
+void {\bfseries set\+NH} (uint n)\hypertarget{classPoly_a00adf49ddded6d28c3a4c9694ef9ac72}{}\label{classPoly_a00adf49ddded6d28c3a4c9694ef9ac72}
+
+\item 
+void {\bfseries set\+NL} (uint n)\hypertarget{classPoly_a0013f1e90ed7c1224d24a21c4c839c66}{}\label{classPoly_a0013f1e90ed7c1224d24a21c4c839c66}
+
+\item 
+void {\bfseries setM} (uint m)\hypertarget{classPoly_a5d64653139b15bf146c9da1f9a7febe8}{}\label{classPoly_a5d64653139b15bf146c9da1f9a7febe8}
+
+\item 
+void {\bfseries set\+Hermite\+Values} (arma\+::mat values)\hypertarget{classPoly_a5192fa805f31eefd0fa282f4edc14f9b}{}\label{classPoly_a5192fa805f31eefd0fa282f4edc14f9b}
+
+\item 
+void {\bfseries set\+Laguerre\+Values} (arma\+::cube values)\hypertarget{classPoly_acc6959f3faf247d11e56c98db58e9eb4}{}\label{classPoly_acc6959f3faf247d11e56c98db58e9eb4}
+
+\item 
+void {\bfseries set\+Z\+Values} (arma\+::vec values)\hypertarget{classPoly_acd863970a6d5231f9e3e4731d9194daf}{}\label{classPoly_acd863970a6d5231f9e3e4731d9194daf}
+
+\item 
+void \hyperlink{classPoly_ae33b266f64312a8a5c0ef3d09be7c62a}{calc\+Hermite} (uint n, arma\+::vec z\+Val)
+\begin{DoxyCompactList}\small\item\em computes the values of n first Hermitian Polynoms at z\+Val values.  this.\+poly\+Values  this.\+z\+Values  this.\+n \end{DoxyCompactList}\item 
+arma\+::vec \hyperlink{classPoly_a2d928621a2d9b14f2895e261dc72c9df}{hermite} (uint n)
+\begin{DoxyCompactList}\small\item\em gives the values of the n-\/th polynom evaluated at this.\+z\+Values. \end{DoxyCompactList}\item 
+void \hyperlink{classPoly_acb8409eaa3ba9a481249d63f5e605c73}{calc\+Laguerre} (uint n, uint m, arma\+::vec z\+Val)
+\begin{DoxyCompactList}\small\item\em computes the values of n first Laguerre Polynoms at z\+Val values.  this.\+poly\+Values  this.\+z\+Values  this.\+n  this.\+m \end{DoxyCompactList}\item 
+arma\+::vec \hyperlink{classPoly_a786d2f2876add55bc3222387a66354ee}{laguerre} (uint n, uint m)
+\begin{DoxyCompactList}\small\item\em gives the the values of the n-\/th Laguerre polynom evaluated at this.\+z\+Values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint {\bfseries nH}\hypertarget{classPoly_a823f1fb9ac955019e02209b07b0bad06}{}\label{classPoly_a823f1fb9ac955019e02209b07b0bad06}
+
+\item 
+uint {\bfseries nL}\hypertarget{classPoly_a222721c0cd647e113b1087f63eef3d13}{}\label{classPoly_a222721c0cd647e113b1087f63eef3d13}
+
+\item 
+uint {\bfseries mL}\hypertarget{classPoly_a57f29e52341ed2ff998e5a27e874da59}{}\label{classPoly_a57f29e52341ed2ff998e5a27e874da59}
+
+\item 
+arma\+::mat {\bfseries res\+Hermite}\hypertarget{classPoly_a3a851420f51f909a44109b43121607a7}{}\label{classPoly_a3a851420f51f909a44109b43121607a7}
+
+\item 
+arma\+::mat {\bfseries hermite\+Values}\hypertarget{classPoly_a571bdacb6f73933d1ee0faa6eb6cf78c}{}\label{classPoly_a571bdacb6f73933d1ee0faa6eb6cf78c}
+
+\item 
+arma\+::cube {\bfseries res\+Laguerre}\hypertarget{classPoly_aea52400d376fa785722b17185d147536}{}\label{classPoly_aea52400d376fa785722b17185d147536}
+
+\item 
+arma\+::cube {\bfseries laguerre\+Values}\hypertarget{classPoly_a5324a3e24b85eb8958ff74b3c9fb3c5d}{}\label{classPoly_a5324a3e24b85eb8958ff74b3c9fb3c5d}
+
+\item 
+arma\+::vec {\bfseries z\+Values}\hypertarget{classPoly_a5975d8829f663b8ea01eb0b4887065a9}{}\label{classPoly_a5975d8829f663b8ea01eb0b4887065a9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a Polynome is defined by its value in abscissa and its orderly. 
+
+\subsection{Member Function Documentation}
+\index{Poly@{Poly}!calc\+Hermite@{calc\+Hermite}}
+\index{calc\+Hermite@{calc\+Hermite}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{calc\+Hermite(uint n, arma\+::vec z\+Val)}{calcHermite(uint n, arma::vec zVal)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poly\+::calc\+Hermite (
+\begin{DoxyParamCaption}
+\item[{uint}]{n, }
+\item[{arma\+::vec}]{z\+Val}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoly_ae33b266f64312a8a5c0ef3d09be7c62a}{}\label{classPoly_ae33b266f64312a8a5c0ef3d09be7c62a}
+
+
+computes the values of n first Hermitian Polynoms at z\+Val values.  this.\+poly\+Values  this.\+z\+Values  this.\+n 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the n first Hermitian will be computed. \\
+\hline
+{\em z\+Val} & List of values to compute Hermitian \\
+\hline
+\end{DoxyParams}
+\index{Poly@{Poly}!calc\+Laguerre@{calc\+Laguerre}}
+\index{calc\+Laguerre@{calc\+Laguerre}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{calc\+Laguerre(uint n, uint m, arma\+::vec z\+Val)}{calcLaguerre(uint n, uint m, arma::vec zVal)}}]{\setlength{\rightskip}{0pt plus 5cm}void Poly\+::calc\+Laguerre (
+\begin{DoxyParamCaption}
+\item[{uint}]{n, }
+\item[{uint}]{m, }
+\item[{arma\+::vec}]{z\+Val}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoly_acb8409eaa3ba9a481249d63f5e605c73}{}\label{classPoly_acb8409eaa3ba9a481249d63f5e605c73}
+
+
+computes the values of n first Laguerre Polynoms at z\+Val values.  this.\+poly\+Values  this.\+z\+Values  this.\+n  this.\+m 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the n first Laguerre will be computed. \\
+\hline
+{\em z\+Val} & List of values to compute Laguerre \\
+\hline
+\end{DoxyParams}
+\index{Poly@{Poly}!hermite@{hermite}}
+\index{hermite@{hermite}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{hermite(uint n)}{hermite(uint n)}}]{\setlength{\rightskip}{0pt plus 5cm}arma\+::vec Poly\+::hermite (
+\begin{DoxyParamCaption}
+\item[{uint}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoly_a2d928621a2d9b14f2895e261dc72c9df}{}\label{classPoly_a2d928621a2d9b14f2895e261dc72c9df}
+
+
+gives the values of the n-\/th polynom evaluated at this.\+z\+Values. 
+
+\begin{DoxyWarning}{Warning}
+this.\+calc\+Hermite has to be called Before calling this.\+hermite(). 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the n-\/th hermitian polynom\textquotesingle{}s values will we be returned. \\
+\hline
+\end{DoxyParams}
+\index{Poly@{Poly}!laguerre@{laguerre}}
+\index{laguerre@{laguerre}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{laguerre(uint n, uint m)}{laguerre(uint n, uint m)}}]{\setlength{\rightskip}{0pt plus 5cm}arma\+::vec Poly\+::laguerre (
+\begin{DoxyParamCaption}
+\item[{uint}]{n, }
+\item[{uint}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{classPoly_a786d2f2876add55bc3222387a66354ee}{}\label{classPoly_a786d2f2876add55bc3222387a66354ee}
+
+
+gives the the values of the n-\/th Laguerre polynom evaluated at this.\+z\+Values. 
+
+\begin{DoxyWarning}{Warning}
+this.\+calc\+Laguerre has to be called Before calling this.\+laguerre(). 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the 1st index of laguerre polynomial values will we be returned. \\
+\hline
+{\em m} & the 2nd index of laguerre polynomial values will we be returned. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/d/docs/cours\+\_\+iie/\+S3/\+I\+P\+S/\+I\+P\+S-\/\+P\+R\+O\+D/src/poly.\+h\item 
+/mnt/d/docs/cours\+\_\+iie/\+S3/\+I\+P\+S/\+I\+P\+S-\/\+P\+R\+O\+D/src/poly.\+cpp\end{DoxyCompactItemize}

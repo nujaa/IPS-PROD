@@ -1,0 +1,12 @@
+src/*.o
+bin/*
+bin/
+tests.cpp
+toPlot/
+plotted/
+plotted/bonjour.svg
+toPlot/Cube.dat
+toPlot/hermit.dat
+toPlot/Psis201.dat
+doc/html/
+test/tests
